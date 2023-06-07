@@ -1,0 +1,1 @@
+const counter=document.querySelectorAll(".counter_value"),speed=30;counter.forEach((e=>{const t=()=>{const n=+e.getAttribute("data-bs-target"),o=+e.innerText,r=n/30;o<n?(e.innerText=(o+r).toFixed(0),setTimeout(t,100)):e.innerText=n};t()}));
